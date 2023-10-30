@@ -20,4 +20,9 @@ public class controller {
     public List<algOutput> run(@RequestBody List<Item> input, @PathVariable int iter, @PathVariable int weight){
         return algService.getItemsResults(input, iter, weight);
     }
+
+    @GetMapping("/sayhi")
+    public String run(){
+        return "you are welcome";
+    }
 }
